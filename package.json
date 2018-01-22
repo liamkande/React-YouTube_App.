@@ -1,0 +1,26 @@
+{
+  "name": "youtube_app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-beta.3",
+    "install": "^0.10.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "youtube-api-search": "^0.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "Built an application that allows users to search for YouTube videos.",
+  "main": "index.js",
+  "repository": "https://github.com/liamkande/React-YouTube_App..git",
+  "author": "Liam Ansoumane Kande",
+  "license": "MIT"
+}
