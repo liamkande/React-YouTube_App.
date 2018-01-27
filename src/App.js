@@ -13,8 +13,11 @@ class App extends Component {
       videos: [],
       selectedVideo: null
      }
+     this.videoSearch('surfboards')
+  }
 
-    YTSearch({key: API_KEY, term: 'beyonce'}, (videos) => {
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
       //ES6 Condensed syntax because the name of the value being passed is identical to the name of data
       //this.setState({videos})
       //The most familiar way to accomplish the same thing:
@@ -27,12 +30,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
           <SearchBar />
-          <VideoDetail video={this.state.selectedVideo}/>
-          <VideoList
-            onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-            videos={this.state.videos}/>
+          <div className="row">
+            <div className="col-8">
+              <VideoDetail video={this.state.selectedVideo}/>
+            </div>
+            <div className="col-4">
+              <VideoList
+                onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                videos={this.state.videos}/>
+            </div>
+          </div>
       </div>
     )
   }
