@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-          <SearchBar />
+          <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
           <div className="row">
             <div className="col-8">
               <VideoDetail video={this.state.selectedVideo}/>
