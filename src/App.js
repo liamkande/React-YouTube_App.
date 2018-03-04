@@ -35,7 +35,11 @@ class App extends Component {
 
     return (
       <div>
-          <SearchBar onSearchTermChange={videoSearch} />
+        <div className="row">
+          <div className="col-8 search-bar">
+              <SearchBar  onSearchTermChange={videoSearch} />
+          </div>
+        </div>
           <div className="row">
                 <div className="col-8">
                   <VideoDetail
