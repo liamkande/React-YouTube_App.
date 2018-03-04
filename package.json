@@ -1,6 +1,6 @@
 {
   "name": "youtube_app",
-  "version": "0.1.0",
+  "version": "1",
   "private": true,
   "dependencies": {
     "bootstrap": "4.0.0-beta.3",
@@ -19,7 +19,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "description": "Built an application that allows users to search for YouTube videos.",
+  "description": "Developed a simple Youtube_App clonewith React",
   "main": "index.js",
   "repository": "https://github.com/liamkande/React-YouTube_App..git",
   "author": "Liam Ansoumane Kande",

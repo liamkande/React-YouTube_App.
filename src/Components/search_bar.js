@@ -8,13 +8,11 @@ class  SearchBar extends Component {
   }
   render() {
     return (
-      <div className="row">
-        <div className="col-8 search-bar">
+      <div>
           <input
             value={this.state.term}
             onChange= {e => this.onInputChange(e.target.value)}
            />
-        </div>
       </div>
     )
   }

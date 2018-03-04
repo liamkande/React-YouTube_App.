@@ -30,20 +30,22 @@ class App extends Component {
   }
 
   render() {
+    // Throttles the Search Term Input
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300)
 
     return (
-      <div className="container-fluid">
+      <div>
           <SearchBar onSearchTermChange={videoSearch} />
           <div className="row">
-            <div className="col-8">
-              <VideoDetail video={this.state.selectedVideo}/>
-            </div>
-            <div className="col-4">
-              <VideoList
-                onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-                videos={this.state.videos}/>
-            </div>
+                <div className="col-8">
+                  <VideoDetail
+                    video={this.state.selectedVideo}/>
+                </div>
+                <div className="col-4">
+                  <VideoList
+                    onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+                    videos={this.state.videos}/>
+                </div>
           </div>
       </div>
     )
